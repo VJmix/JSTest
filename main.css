@@ -1,0 +1,52 @@
+.exp {
+    background-color: rgba(221, 221, 221, 0.918);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.exp-title {
+    font-size: 2em;
+    font-family: sans-serif;
+    margin: 10px;
+    
+}
+input:focus {
+    border: rgba(112, 109, 255, 0.5) solid 2px;
+}
+.input-box {
+    border-radius: 18px;
+    padding: 8px;
+    width: 35px;
+    border: rgba(255, 255, 255, 0) solid 2px;
+
+}
+.question-statement {
+    margin: 10px;
+}
+.subquestion {
+    margin-left: 10px;
+}
+.custom-button {
+    padding: 10px;
+    background-color: rgb(185, 185, 185);
+    border-style: none;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.custom-button:hover {
+    background-color: rgb(160, 156, 156);
+}
+:focus {
+    outline: rgba(0, 0, 0, 0) auto 5px;
+}
+.result {
+    margin: 10px;
+    background-color: rgb(197, 196, 196);
+    padding: 10px;
+    border-radius: 10px;
+}
+* {
+    font-family: sans-serif;
+}
