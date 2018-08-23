@@ -58,7 +58,7 @@ function sortElements() {
         let inputBox = "";
         document.getElementById("elementsOfSort").innerHTML = inputBox;
         for(let i = 0; i < n; i++) {
-            inputBox += '<div class="subquestion">Enter element ' + (i + 1).toString() + '&nbsp;<input class="input-box" id="sortElement' + (i + 1).toString() + '"/></div><br/>';
+            inputBox += '<div class="subquestion">Enter element ' + (i + 1).toString() + '&nbsp;<input type="number" class="input-box" id="sortElement' + (i + 1).toString() + '"/></div><br/>';
         }
         document.getElementById("elementsOfSort").innerHTML = inputBox;
         document.getElementById("sortElementsInputButton").style.display = "none";
@@ -93,9 +93,9 @@ function liSearchElements() {
         let inputBox = "";
         document.getElementById("elementsOfLinearSearch").innerHTML = inputBox;
         for (let i = 0; i < n; i++) {
-            inputBox += '<div class="subquestion">Enter element ' + (i + 1).toString() + '&nbsp;<input class="input-box" id="liArrayElement' + (i + 1).toString() + '"/></div><br/>';
+            inputBox += '<div class="subquestion">Enter element ' + (i + 1).toString() + '&nbsp;<input type="number" class="input-box" id="liArrayElement' + (i + 1).toString() + '"/></div><br/>';
         }
-        inputBox += '<div class="subquestion">Enter an element to search&nbsp;<input id="liSearchElement" class="input-box"/></div><br/>';
+        inputBox += '<div class="subquestion">Enter an element to search&nbsp;<input id="liSearchElement" type="number" class="input-box"/></div><br/>';
         document.getElementById("elementsOfLinearSearch").innerHTML = inputBox;
         document.getElementById("linearElementsInputButton").style.display = "none";
         let searchButton = '<button class="custom-button" onclick="showLiSearchedElement()">Check for the element</button>';
@@ -141,10 +141,11 @@ function biSearchElements() {
         let inputBox = "";
         inputBox += '<div class="subquestion"><em>Elements must be given in ascending order</em></div><br/>';
         for (let i = 0; i < n; i++) {
-            inputBox += '<div class="subquestion">Enter element ' + (i + 1).toString() + '&nbsp;<input class="input-box" id="biArrayElement' + (i + 1).toString() + '"/></div><br/>';
+            inputBox += '<div class="subquestion">Enter element ' + (i + 1).toString() + '&nbsp;<input type="number" class="input-box" id="biArrayElement' + (i + 1).toString() + '"/></div><br/>';
         }
-        inputBox += '<div class="subquestion">Enter an element to search&nbsp;<input id="biSearchElement" class="input-box"/></div><br/>';
-        document.getElementById("elementsOfBinarySearch").innerHTML = inputBox;
+        inputBox += '<div class="subquestion">Enter an element to search&nbsp;<input id="biSearchElement" type="number" class="input-box"/></div><br/>';
+        document.getElementById("elementsOfBinarySearch").innerHTML = 
+            Box;
         document.getElementById("binaryElementsInputButton").style.display = "none";
         let searchButton = '<button class="custom-button" onclick="showBiSearchedElement()">Check for the element</button>';
         document.getElementById("elementsOfBinarySearch").innerHTML += searchButton;
@@ -179,7 +180,7 @@ function showBiSearchedElement() {
                 low = mid + 1;
             } else if(biSearchElement < values[mid]) {
                 high = mid - 1;
-            } else if (biSearchElement === values[mid]){
+            } else if (biSearchElement == values[mid]){
                 finalIndex = mid;
                 isPresent = true;
                 break;
