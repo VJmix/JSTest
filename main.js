@@ -144,7 +144,7 @@ function biSearchElements() {
             inputBox += '<div class="subquestion">Enter element ' + (i + 1).toString() + '&nbsp;<input type="number" class="input-box" id="biArrayElement' + (i + 1).toString() + '"/></div><br/>';
         }
         inputBox += '<div class="subquestion">Enter an element to search&nbsp;<input id="biSearchElement" type="number" class="input-box"/></div><br/>';
-        document.getElementById("elementsOfBinarySearch").innerHTML = Box;
+        document.getElementById("elementsOfBinarySearch").innerHTML = inputBox;
         document.getElementById("binaryElementsInputButton").style.display = "none";
         let searchButton = '<button class="custom-button" onclick="showBiSearchedElement()">Check for the element</button>';
         document.getElementById("elementsOfBinarySearch").innerHTML += searchButton;
